@@ -5,11 +5,84 @@ header {
 header a {
   color: #FE3525;
   font-family: BigJohn;
+  padding: 10px;
   text-decoration: none;
+}
+
+.hamburger-label {
+  cursor: pointer;
+}
+
+.hamburger-container {
+  outline: none;
   padding: 10px;
 }
 
-.header-grid {
+.hamburger {
+  background-color: #FE3525;
+  height: 4px;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 30px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hamburger-checkbox {
+  display: none;
+}
+
+.hamburger-checkbox:checked + .navigation {
+  top: 45px;
+}
+
+.navigation {
+  background: #FFDFE7;
+  left: 0;
+  top: -100%;
+  position: absolute;
+  -webkit-transition: top .3s ease-out;
+  transition: top .3s ease-out;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 901px) {
+  .navigation {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5px;
+  position: static;
+  }
+  .hamburger-label {
+    display: none;
+  }
 }

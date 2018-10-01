@@ -1,7 +1,7 @@
 import React from "react"
-import Grid from "lib/grid"
-import ShoutyText from "lib/shouty-text"
-import Button from "lib/button"
+import Grid from "../../lib/grid"
+import ShoutyText from "../../lib/shouty-text"
+import Button from "../../lib/button"
 
 import "./style.css"
 

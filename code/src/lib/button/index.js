@@ -1,5 +1,5 @@
 import React from "react"
-import ShoutyText from "lib/shouty-text"
+import ShoutyText from "../../lib/shouty-text"
 import "./style.css"
 
 class Button extends React.Component {
