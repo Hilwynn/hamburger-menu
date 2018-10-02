@@ -14,9 +14,17 @@ header a {
 }
 
 .hamburger-container {
-  outline: none;
   padding: 10px;
 }
+
+.hamburger-container:focus {
+  outline: none;
+}
+
+/* .hamburger-container:focus > .hamburger {
+  -webkit-box-shadow: 0 0 4px 1px rgba(254, 53, 37, 0.3);
+          box-shadow: 0 0 4px 1px rgba(254, 53, 37, 0.3);
+} */
 
 .hamburger {
   background-color: #FE3525;
